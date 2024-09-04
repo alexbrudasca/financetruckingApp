@@ -73,3 +73,17 @@ document.getElementById('seeMore').addEventListener('click', function () {
     this.innerText = moreUsers.classList.contains('hidden') ? 'See more' : 'See less';
 });
 
+
+
+const settingsButton = document.getElementById('settingsButton')
+const wrapper = document.querySelector('.wrapper')
+
+settingsButton.addEventListener('click', () => {
+    main.classList.remove('hidden');
+
+    // Display the wrapper by removing the 'hidden' class
+    wrapper.classList.remove('hidden');
+
+    username.value  = ''
+    password.value = ''
+});
