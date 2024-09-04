@@ -47,6 +47,7 @@ logInbutton.addEventListener('click', () => {
             confirmButtonText: 'Ok',
             width: '100%',
             toast: true,
+
         });
     }
     else {
