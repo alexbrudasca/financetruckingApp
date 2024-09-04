@@ -38,7 +38,18 @@ logInbutton.addEventListener('click', () => {
             width: '100%',
             toast: true,
         });
-    } else {
+    }
+    else if (password.value.length < 6) {
+        Swal.fire({
+            title: 'Error!',
+            text: 'Password must be at least 6 characters long',
+            icon: 'error',
+            confirmButtonText: 'Ok',
+            width: '100%',
+            toast: true,
+        });
+    }
+    else {
         // Set login state
         isLoggedIn = true;
         main.classList.remove('hidden');
